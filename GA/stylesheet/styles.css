@@ -1,0 +1,608 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 May, 2023, 12:11:46 PM
+    Author     : 21037598
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Images/wallpaper.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.registerContainer, .loginContainer, .loginResultContainer, .registerResultContainer, .mainMovieContainer, .mainReviewContainer, .mainAddReviewContainer, .mainDeleteReviewContainer,
+.accountContainer {
+    border-style: solid;
+    border-color: white;
+    border-radius:1.5em;
+    padding: 1em;
+    background-color: white;
+}
+
+.mainAddReviewContainer, .mainDeleteReviewContainer {
+    margin-bottom: 0.5em;
+}
+
+.registerInputVert, .registerInputHorizontal {
+    display: flex;
+}
+
+.registerInputVert {
+    justify-content: space-between;
+}
+
+fieldset {
+    border-radius: 1em;
+}
+
+.fieldsetLeft {
+    margin-right: 0.25em;
+}
+
+.fieldsetRight {
+    margin-left: 0.25em;
+}
+
+.registerInputLeft, .registerInputRight, .nameContainer,
+.emailContainer, .passwordContainer, .usernameContainer,
+.numberContainer, .dobContainer, .addressContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameContainer,
+.emailContainer, .passwordContainer, .usernameContainer,
+.numberContainer, .dobContainer {
+    padding: 0.5em;
+}
+
+.inputText {
+    font-size: 1em;
+    margin-top: 0.5em;
+    height: 30px;
+    font-family: 'Poppins';
+}
+
+.searchInput {
+    font-size: 1em;
+    height: 30px;
+    font-family: 'Poppins';
+    margin-right: 0.5em;
+    border-radius: 0.5em;
+}
+
+.registerInputHorizontal {
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+
+.registerInputTop, .registerInputBtm, .registerInputMiddle {
+    display: flex;
+
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+.legendBottom {
+    text-align: left;
+}
+
+.registerInputBtm {
+    margin: 1em 0 0 0;
+    flex-direction: column;
+    align-self: center;
+}
+
+.submitBtn {
+    margin: 0 0 0.5em 0;
+    cursor: pointer;
+}
+
+.headerContainer {
+    background-color: #333333;
+    display: flex;
+}
+
+.headerLogo {
+    background-color: #000;
+    color: white;
+    padding: 16px;
+    text-align: center; 
+}
+
+.headerList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.labelText {
+    font-weight: bold;
+}
+
+.submitBtn, .resetBtn {
+    height: 30px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0 5em 0 5em;
+}
+
+.textField {
+    font-family: 'Poppins';
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+    resize: none;
+}
+
+#addressText {
+    margin-top: 0.5em;
+}
+
+.registerHeader, .loginHeader, .moviesListHeader, .reviewsHeader, .addReviewHeader, .accountHeader {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.addReviewHeaderSubText {
+    text-align: center;
+    margin-top: -0.5em;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    height: 45px;
+    margin-top: auto;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 2em 0 2em; 
+    font-style: italic;
+}
+
+.footerText {
+    color: white;
+    text-decoration: none;
+}
+
+.footerText:hover {
+    text-decoration: underline;
+}
+
+.searchContainer {
+    margin-right: 1em;
+    align-self: center;
+    margin-left: auto;
+}
+
+.searchBtn {
+    font-size: 1em;
+    height: 38px;
+    font-family: 'Poppins';
+    background-color: #24A0ED;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+.searchBtn:hover {
+    background-color: #1c80bd;    
+}
+
+.resetBtn {
+    cursor: pointer;
+
+}
+
+textarea {
+    resize: none;
+}
+
+.loginText {
+    padding-top: 0.5em;
+    color: white;
+    padding-bottom: 2em;
+}
+
+.loginLink {
+    color: white;
+}
+
+.loginLink:hover {
+    color: #D3D3D3;
+}
+
+.registerText {
+    padding-top: 0.5em;
+}
+
+.registerLink, .loginResultLink, .forgotPasswordLink {
+    color: black;
+}
+
+.registerLink:hover, .loginResultLink:hover, .forgotPasswordLink:hover {
+    color: #808080;
+}
+
+.submitLoginBtn {
+    align-self: center;
+}
+
+.welcomeMessage {
+    align-self: end;
+    margin-right: 1em;
+    font-style: italic;
+}
+
+.loginResultContainerVert, .registerResultContainerVert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30em;
+}
+
+.loginMessage, .registerMessage {
+    align-self: start;
+}
+
+.forgotPasswordContainer {
+    margin-top: 0.2em;
+    text-align: end;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainMovieContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.movieSelection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90em;
+    flex-wrap: wrap;
+}
+
+.movieListImg {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    object-position: 25% 25%; 
+    transition: transform .2s;
+    border: 3px solid #899499;
+    border-radius: 0.5em;
+}
+
+.movieListImg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px black;
+
+}
+
+.movieName {
+    font-weight: bold;
+    text-align: center;
+}
+
+.movieGenre {
+    font-size: 14px;
+    text-align: center;
+}
+
+.movieBtn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.sortText {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.searchText {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.sortForm {
+    margin-top: 1em;
+    display: flex;
+    justify-content: end;
+}
+
+.sortSelect, .sortBtn {
+    font-family: 'Poppins';
+    margin-left: 0.4em;
+}
+
+.sortBtn {
+    font-weight: bold;
+}
+
+.mainDoMovieContainer {
+    margin-top: 2em;
+    display: flex;
+    width: 90em;
+}
+
+.movieContainerLeft, .movieContainerRight {
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+.movieContainerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movieImg {
+    border: 3px solid white;
+    border-radius: 1em;
+}
+
+.viewMovieReview {
+    align-self: center;
+}
+
+.viewMovieReviewBtn, .viewMovieReview {
+    font-family: 'Poppins';
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.movieTitle {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.individualMovieContainer {
+    margin-top: 2em;
+}
+
+.moviesListHeader {
+    margin-bottom: -0.5em;
+}
+
+.reviewsTable {
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-around;
+    padding: 0 2em 0 2em;
+    width: 90em;
+}
+
+.reviewColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.movieText {
+    padding-top: 1em;
+    color: white;
+}
+
+.movieLink {
+    color: white;
+}
+
+.movieLink:hover {
+    color: #D3D3D3;
+}
+
+.addReviewBtn {
+    background-color: transparent;
+    font-family: 'Poppins';
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+    text-decoration-line: underline;
+}
+
+.center {
+    margin-top: -0.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.reviewColumnHeader {
+    font-weight: bold;
+}
+
+.addReviewForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 30em;
+}
+
+.commentConainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.addReviewContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.backContainer {
+    text-align: center;
+    color: white;
+}
+
+.textWhite {
+    color: white;
+}
+
+.submitContainer {
+    align-self: center;
+    margin-bottom: -0.5em;
+}
+.textBlack {
+    color: black;
+}
+
+
+.confirmAddReviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 30em;
+}
+
+.reviewHeader {
+    text-align: start;
+    padding-right: 1.5em;
+}
+
+.startingCol, .middleCol {
+    padding-right: 1.5em;
+    vertical-align: top;
+}
+
+.deleteHeaderHeader {
+    padding-right: 0;
+}
+
+.reviewTable {
+    width: 88em;
+}
+
+.noHeader {
+    width: 1em;
+}
+
+.movieTitleHeader {
+    width: 13em;
+}
+
+.contentHeader {
+    width: 35em;
+}
+
+.ratingHeader {
+    width: 5em;
+}
+
+.datePostedHeader {
+    width: 7em;
+}
+
+.usernameHeader {
+    width: 6em;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.uneditable {
+    cursor: default;
+    background-color: #D3D3D3;
+}
+
+.mainDeleteContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteReviewForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 35em;
+}
+
+.marginFix {
+    margin:0;
+    margin-top: 1.5em;
+}
+
+.mainDeleteReviewContainer {
+    width: 35em;
+}
+
+.rememberMe {
+    padding-left: 0.5em;
+    }
+    
+    .sectionMain {
+        display: flex;
+        flex-direction: column;
+        width: 30em;
+}
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .delete {
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+    }

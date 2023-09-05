@@ -1,0 +1,133 @@
+
+<!-- saved from url=(0035)http://localhost/GA/viewReviews.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>M.movieTitle
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    
+        <title>Movietopia || Reviews</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Movietopia __ Reviews_files/styles.css">
+    
+    
+        <div class="header">
+            <div class="headerContainer">
+                <div class="headerLogo">
+                    logo here
+                </div>
+                <ul class="headerList">
+                    <li><a href="http://localhost/GA/viewMovies.php">Movies</a>
+                    </li><li><a href="http://localhost/GA/viewReviews.php">Reviews</a>
+                    </li><li><a href="http://localhost/GA/login.php">Register/Login</a>
+                </li></ul>
+                <div class="searchContainer">
+                    <form class="searchBar" method="POST" action="http://localhost/GA/viewMovies.php">
+                        <input name="searchInput" type="text" size="20" maxlength="100" placeholder="Search for movies" class="searchInput" required="">
+                        <input class="searchBtn" type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContent">
+            <div class="mainReviewContainer">
+                <div class="reviewsHeader">Movie Reviews for all movies</div>
+                                <form method="POST" action="http://localhost/GA/doReview.php"><div class="center"><button class="registerLink addReviewBtn">Add new Review</button></div></form>
+                <!-- for each review column, run for loop to add review -->
+                <div class="reviewsTable">
+
+                    <!-- sn No column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">No.</div>
+                                                    <div class="reviewColumnContent">1.</div>
+                                                    <div class="reviewColumnContent">2.</div>
+                                                    <div class="reviewColumnContent">3.</div>
+                                                    <div class="reviewColumnContent">4.</div>
+                                                    <div class="reviewColumnContent">5.</div>
+                                            </div>
+
+                    <!-- Review column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Title</div>
+                                                    <div class="reviewColumnContent">Avatar: The Way Of Water</div>
+                                                    <div class="reviewColumnContent">Avatar: The Way Of Water</div>
+                                                    <div class="reviewColumnContent">My Puppy</div>
+                                                    <div class="reviewColumnContent">My Puppy</div>
+                                                    <div class="reviewColumnContent">My Puppy</div>
+                                            </div>
+                    
+                    <!-- Review column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Review</div>
+                                                    <div class="reviewColumnContent">Joined in the Avatar bandwagon late but what a spectacle. stunning visual effects</div>
+                                                    <div class="reviewColumnContent">Best movie ever!</div>
+                                                    <div class="reviewColumnContent">Heartwarming show, definitely worth a watch</div>
+                                                    <div class="reviewColumnContent">quite boring.</div>
+                                                    <div class="reviewColumnContent">Good movie for dog lovers. Puppy is very cute.</div>
+                                            </div>
+
+                    <!-- Rating column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Rating</div>
+                                                
+                        <div class="reviewColumnContent">★★★★★</div><div class="reviewColumnContent">★★★★★</div><div class="reviewColumnContent">★★★★★</div><div class="reviewColumnContent">★★</div><div class="reviewColumnContent">★★★★</div>                    </div>
+                    
+                    <!-- Date posted column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Date Posted</div>
+                                                    <div class="reviewColumnContent">2023-03-29</div>
+                                                    <div class="reviewColumnContent">2023-04-19</div>
+                                                    <div class="reviewColumnContent">2023-04-04</div>
+                                                    <div class="reviewColumnContent">2023-04-19</div>
+                                                    <div class="reviewColumnContent">2023-04-19</div>
+                                            </div>
+
+                    <!-- Username column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Username</div>
+                                                    <div class="reviewColumnContent">david</div>
+                                                    <div class="reviewColumnContent">mary</div>
+                                                    <div class="reviewColumnContent">peter</div>
+                                                    <div class="reviewColumnContent">david</div>
+                                                    <div class="reviewColumnContent">mary</div>
+                                            </div>
+
+                    <!-- Edit column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Edit</div>
+
+                    </div>
+
+                    <!-- Delete column -->
+                    <div class="reviewColumn">
+                        <div class="reviewColumnHeader">Delete</div>
+
+                    </div>
+
+                </div>
+                <!-- reloads PHP with new sorted order -->
+                <form method="POST" action="http://localhost/GA/viewReviews.php" class="sortForm">
+                    <div class="sortMessage">Sort by:</div>
+                    <select name="sortOrderreviewMovie5" class="sortSelect">
+                        <option value="reviewId">Default</option>
+                        <option value="M.movieTitle">Title</option>
+                        <option value="rating DESC">Rating - Highest to Lowest</option>
+                        <option value="rating ASC">Rating - Lowest to Highest</option>
+                        <option value="datePosted DESC">Date Posted - Latest</option>
+                        <option value="datePosted ASC">Date Posted - Earliest</option>
+                    </select>
+                    <input type="submit" value="Sort" class="sortBtn">
+                </form>
+            </div>
+            <div class="registerText"><a href="http://localhost/GA/viewMovies.php" class="registerLink">Back</a> to movies list page!</div>
+        </div>
+
+        <div class="footer">
+            <a href="https://deancruz1997.github.io/" class="footerText">C203 Graded Assignment - Dean Cruz</a>
+        </div>
+    
+</body></html>
