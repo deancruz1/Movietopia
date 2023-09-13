@@ -50,14 +50,14 @@ and open the template in the editor.
                 <nav class="navbar-expand-sm navbar-dark">
                     <div class="container-fluid">
                         <ul class="headerList">
-                            <li><a href="./viewMovies.php">Movies</a>
+                            <li><a href="./index.html">Movies</a>
                             <li><a href="./viewReviews.php">Reviews</a>
                             <li><a href="./login.php">Register/Login</a>
                         </ul>
                     </div>
                 </nav>
                 <div class="searchContainer">
-                    <form class="searchBar" method="POST" action="viewMovies.php">
+                    <form class="searchBar" method="POST" action="index.html">
                         <input name="searchInput" type="text" size ="20" maxlength="100" placeholder="Search for movies" class="searchInput" required/>
                         <input class="searchBtn" type="submit" value="Search"/>
                     </form>
